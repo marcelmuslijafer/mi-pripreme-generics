@@ -1,0 +1,38 @@
+@startuml
+interface MyComparator<T> {
+    +compare(o1: T, o2 T): int
+}
+
+class Node<T> {
+    -value: T
+    -left: Node<T>
+    -right: Node<T>
+
+    +Node(value: T)
+    +Node(value: T, left: Node<T>, right: Node<T>)
+    +getValue(): T
+    +setValue(value: T):
+    +getLeftChild(): Node<T>
+    +setLeftChild(): Node<T>
+    +getRightChild(): Node<T>
+    +setRightChild(node: Node<T>):
+}
+
+class BinarySearchTree<T> {
+    -root: Node<T>
+    -comparator: MyComparator<T>
+
+    +BinarySearchTree(comparator: MyComparator<T>)
+    +insert(value: T): void
+    +contains(value: T): boolean
+    +delete(value: T): void
+    +printInOrder(): void
+    +printPreOrder(): void
+    +printPostOrder(): void
+}
+
+
+BinarySearchTree --> "0,1\n-root " Node
+BinarySearchTree --> "1 " MyComparator
+
+@enduml
