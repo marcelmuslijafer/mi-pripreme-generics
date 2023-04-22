@@ -1,4 +1,4 @@
-package generics;
+package generics.comparators;
 
 public interface MyComparator<T> {
 

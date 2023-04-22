@@ -3,6 +3,12 @@ interface MyComparator<T> {
     +compare(o1: T, o2 T): int
 }
 
+class IntegerComparator {
+}
+
+class StudentComparator {
+}
+
 class Node<T> {
     -value: T
     -left: Node<T>
@@ -25,14 +31,52 @@ class BinarySearchTree<T> {
     +BinarySearchTree(comparator: MyComparator<T>)
     +insert(value: T): void
     +contains(value: T): boolean
-    +delete(value: T): void
+    +count(tester: Tester<? extends T>): int
     +printInOrder(): void
     +printPreOrder(): void
     +printPostOrder(): void
 }
 
+class Student {
+    -id: String
+    -grades: int[]
+
+    +Student(id: String)
+    +getId(): String
+    +setGrade(subject: Subject, int grade): void
+    +average(): double
+    +equals(): boolean
+    +toString(): String
+}
+
+enum Subject {
+    FUNDAMENTALS_OF_ELECTRICAL_ENGINEERING,
+    MANAGEMENT_IN_ENGINEERING,
+    MATHEMATICAL_ANALYSIS_2,
+    OBJECT_ORIENTED_PROGRAMMING,
+    PHYSICAL_EDUCATION_AND_WELFARE_2,
+    PHYSICS
+}
+
+interface Tester<T> {
+    +test(o: T): boolean
+}
+
+class EvenIntegerTester {
+}
+
+class AboveAverageStudent{
+}
+
+MyComparator <|.. StudentComparator
+MyComparator <|.. IntegerComparator
 
 BinarySearchTree --> "0,1\n-root " Node
 BinarySearchTree --> "1 " MyComparator
+
+Student --> Subject
+
+Tester <|.. EvenIntegerTester
+Tester <|.. AboveAverageStudent
 
 @enduml
