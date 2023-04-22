@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2d93d77c-eb23-40a9-9d4c-a19c877baa5c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generics/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generics/test/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generics/tree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generics/tree/BinarySearchTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682114625099</updated>
       <workItem from="1682114626464" duration="1594000" />
-      <workItem from="1682116232119" duration="16941000" />
+      <workItem from="1682116232119" duration="16976000" />
     </task>
     <servers />
   </component>
