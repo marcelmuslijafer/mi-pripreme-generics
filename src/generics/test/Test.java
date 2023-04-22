@@ -16,6 +16,20 @@ public class Test {
     public static void main(String[] args) {
         int count = Integer.parseInt(args[0]);
 
+        BinarySearchTree<Integer> bst = new BinarySearchTree<>(new IntegerComparator());
+        bst.insert(10);
+        bst.insert(25);
+        bst.insert(14);
+        bst.insert(6);
+        bst.insert(8);
+        bst.insert(1);
+        bst.insert(22);
+        bst.insert(19);
+
+        bst.printInOrder();
+        bst.printPreOrder();
+        bst.printPostOrder();
+
         testInt(count);
         testStudent(count);
 

@@ -1,6 +1,7 @@
 package generics.tree;
 
 import generics.comparators.MyComparator;
+import generics.tester.Tester;
 
 public class BinarySearchTree<T> {
     private Node<T> root;
@@ -16,6 +17,10 @@ public class BinarySearchTree<T> {
 
     public boolean contains(T value) {
         return contains(root, value);
+    }
+
+    public int countIf(Tester<? super T> tester) {
+        return countIf(root, tester);
     }
 
     public void printInOrder() {
@@ -61,6 +66,19 @@ public class BinarySearchTree<T> {
         }
 
         return true;
+    }
+
+    private int countIf(Node<T> node, Tester<? super T> tester) {
+        if (node == null)
+            return 0;
+
+        int count = 0;
+        if (tester.test(node.getValue())) {
+            count++;
+        }
+
+        count += countIf(node.getLeft(), tester) + countIf(node.getRight(), tester);
+        return count;
     }
 
     private void printInOrder(Node<T> node) {

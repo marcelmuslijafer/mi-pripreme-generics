@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d93d77c-eb23-40a9-9d4c-a19c877baa5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/generics/comparators/StudentGradeComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/student/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/student/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/tree/BinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrams/class-diagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/diagrams/class-diagram.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generics/BinarySearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generics/MyComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generics/comparators/MyComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generics/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generics/tree/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generics/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generics/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generics/tree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generics/tree/BinarySearchTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682114625099</updated>
       <workItem from="1682114626464" duration="1594000" />
-      <workItem from="1682116232119" duration="12433000" />
+      <workItem from="1682116232119" duration="16941000" />
     </task>
     <servers />
   </component>
@@ -123,8 +117,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/generics/tree/BinarySearchTree.java</url>
-          <line>67</line>
+          <line>85</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/generics/test/Test.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
